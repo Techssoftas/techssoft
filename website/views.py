@@ -68,7 +68,7 @@ def data_science(request):
     return render(request, 'website/data_science.html')
 
 def application_development(request):
-    return render(request, 'website/Application_development.html')
+    return render(request, 'website/application_development.html')
 
 def website_development(request):
     return render(request, 'website/website_development.html')
