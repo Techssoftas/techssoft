@@ -107,9 +107,10 @@
         class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90"
       >
         <div class="vl-offcanvas-logo">
-          <a href="{% url 'index' %}"
-            ><img src="{% static 'website/img/logo/logo1.png' %}" alt=""
-          /></a>
+          <a href="{% url 'index' %}">
+            {% comment %} <img src="{% static 'website/img/logo/logo1.png' %}" alt=""/> {% endcomment %}
+          <h1 style="color: aliceblue;">Techssoft</h1>
+          </a>
         </div>
         <div class="vl-offcanvas-close">
           <button class="vl-offcanvas-close-toggle">
@@ -126,18 +127,16 @@
       <div class="vl-offcanvas-info">
         <div class="space20"></div>
         <span
-          ><a >
+          ><a style='color:white'>
             <i class="fa-regular fa-envelope"></i> +91 9962976444</a
           ></span
         >
         <span
-          ><a 
-            ><i class="fa-solid fa-phone"></i> techssoftas@gmail.com</a
+          ><a style='color:white'><i class="fa-solid fa-phone"></i> techssoftas@gmail.com</a
           ></span
         >
         <span
-          ><a 
-            ><i class="fa-solid fa-location-dot"></i> Odakadu St,Tiruppur.</a
+          ><a style='color:white'><i class="fa-solid fa-location-dot"></i> Odakadu St,Tiruppur.</a
           ></span
         >
       </div>
@@ -145,10 +144,10 @@
       <div class="vl-offcanvas-social">
         <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
         <div class="space20"></div>
-        <a ><i class="fab fa-facebook-f"></i></a>
+        {% comment %} <a ><i class="fab fa-facebook-f"></i></a>
         <a ><i class="fab fa-twitter"></i></a>
         <a ><i class="fab fa-linkedin-in"></i></a>
-        <a ><i class="fab fa-instagram"></i></a>
+        <a ><i class="fab fa-instagram"></i></a> {% endcomment %}
       </div>
     </div>
   </div>
